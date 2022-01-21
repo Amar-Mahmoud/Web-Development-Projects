@@ -1,2 +1,7 @@
 # Web-Development-Projects
-HTML, PHP, CSS, ANGULAR
+## Languages used:
+- HTML
+- JavaScript
+- Angular
+- CSS
+- PHP
