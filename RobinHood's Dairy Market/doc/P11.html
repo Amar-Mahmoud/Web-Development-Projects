@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Edit Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+
+<body id="home" class="open-left">
+<div id="offcanvas-left" class="hide">
+    <ul>
+        <li><a href="P1.html" > Homepage </a></li>
+        <li><a href="P2.html" > Categories </a></li>
+        <li><a href="P4.html" > Shopping Cart </a></li>
+        <li><a href="P5.html" > User login </a></li>
+        <li><a href="P6.html" > Sign up </a></li>
+        <li><a href="P7.html"> Product List </a></li>
+        <li><a href="P8.html"> Edit Product </a></li>
+        <li><a href="P9.html"> User list </a></li>
+        <li><a href="P10.html"> Edit User </a></li>
+        <li><a href="P11.html"> Order List </a></li>
+        <li><a href="P12.html"> Edit Order </a></li>
+    </ul>
+</div>
+
+<div class="togglebar">
+    <!-- adds the class of hide to .offcanvas.left -->
+    <div class="toggle" onclick="toggleLeft()">
+        <i class="fa fa-bars"></i>
+    </div>
+</div>
+
+
+<div class="center">
+    <header>
+        <h1 style="color: #fff;">
+            Robin Hood's Dairy Market Backstore
+        </h1>
+    </header>
+
+    <main>
+
+        <!-- The Order list in table format -->
+        <table>
+
+            <!-- Table header -->
+            <tr>
+                <th> Order Number </th>
+                <th> Product </th>
+                <th> Quantity </th>
+                <th> Supplier </th>
+            </tr>
+
+            <!-- first order, static, hardcoded -->
+            <tr>
+                <td> 1 </td>
+                <td> Sugar(1kg) </td>
+                <td> 3 </td>
+                <td>
+                    <label for="framework">
+                        Choose Supplier:
+                    </label>
+                    <select id="framework">
+                        <option> Escobar's fine powders </option>
+                        <option> Arrakis Safe-Stuffs </option>
+                        <option> Toys 'R' food </option>
+                        <option> Super legal Chemicals </option>
+                    </select>
+                <th><input class="btn-primary" type="button" value="Delete Order"/></th>
+                <th><input class="btn-primary" type="button" value="Edit Order"/></th>
+                </td>
+            </tr>
+
+            <!-- Second order -->
+            <tr>
+                <td> 2 </td>
+                <td> Spice(50g) </td>
+                <td> 3 </td>
+                <td>
+                    <label for="framework">
+                        Choose Supplier:
+                    </label>
+                    <select id="framework">
+                        <option> Escobar's fine powders </option>
+                        <option> Arrakis Safe-Stuffs </option>
+                        <option> Toys 'R' food </option>
+                        <option> Super legal Chemicals </option>
+                    </select>
+                <th><input class="btn-primary" type="button" value="Delete Order"/></th>
+                <th><input class="btn-primary" type="button" value="Edit Order"/></th>
+                </td>
+            </tr>
+
+            <!-- Third order -->
+            <tr>
+                <td> 3 </td>
+                <td> Everything Nice(1 bucket) </td>
+                <td> 1 </td>
+                <td>
+                    <label for="framework">
+                        Choose Supplier:
+                    </label>
+                    <select id="framework">
+                        <option> Escobar's fine powders </option>
+                        <option> Arrakis Safe-Stuffs </option>
+                        <option> Toys 'R' food </option>
+                        <option> Super legal Chemicals </option>
+                    </select>
+                </td>
+                <th><input class="btn-primary" type="button" value="Delete Order"/></th>
+                <th><input class="btn-primary" type="button" value="Edit Order"/></th>
+            </tr>
+
+            <!-- Fourth order -->
+            <tr>
+                <td> 4 </td>
+                <td> Chemical X(1.89L) </td>
+                <td> 2 </td>
+                <td>
+                    <label for="framework">
+                        Choose Supplier:
+                    </label>
+                    <select id="framework">
+                        <option> Escobar's fine powders </option>
+                        <option> Arrakis Safe-Stuffs </option>
+                        <option> Toys 'R' food </option>
+                        <option> Super legal Chemicals </option>
+                    </select>
+                <th><input class="btn-primary" type="button" value="Delete Order"/></th>
+                <th><input class="btn-primary" type="button" value="Edit Order"/></th>
+                </td>
+            </tr>
+
+        </table>
+        <br>
+
+        <form>
+            <input class="btn-primary" type="button" value="Add Order" onclick="location.href='P12.html'"/>
+        </form>
+
+    </main>
+
+    <footer>
+        <h5> Robin Hood's Dairy Market &reg;</h5>
+    </footer>
+
+
+</div>
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

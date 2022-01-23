@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>Milk 1L</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+    </head>
+
+    <body id="home" class="open-left">
+        <div id="offcanvas-left" class="hide">
+            <ul>
+                <li><a href="../index.html" > Homepage </a></li>
+                <li><b> Categories </b></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-a.html" > Fruits & Vegetables </a></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-b.html" > Bread & Cereals </a></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-c.html" > Meats </a></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-d.html" > Dairy </a></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-e.html" > Beverages </a></li>
+                <li> &nbsp;&nbsp;<a href="../Categories/P2-f.html" > Snacks </a></li>
+                <li style="color: red;"><b> Backstore </b></li>
+                <li> &nbsp;&nbsp;<a href="../P7.html"> Product List </a></li>
+                <li> &nbsp;&nbsp;<a href="../P9.html"> User list </a></li>
+                <li> &nbsp;&nbsp;<a href="../P11.html"> Order List </a></li>
+            </ul>
+        </div>
+
+        <div class="togglebar">
+            <!-- adds the class of hide to .offcanvas.left -->
+            <div class="toggle" onclick="toggleLeft()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="center">
+            <nav>
+                <ul>
+                    <li><a href="../P5.html"> Login </a></li>
+                    <li><a href="../P4.html"> Shopping Cart </a></li>
+                </ul>
+            </nav>
+
+            <header>
+				<h1>
+					 Welcome to Robin Hood's Dairy Market! <br> <i> Where the milk is always warm... </i>
+				</h1>
+            </header>
+            <br><br>
+            <section>
+
+                <div class="container">
+                    <div class="col-md-10">
+                        <h1>Milk 1L</h1>
+                        <hr>
+                        <img src="../img/milk.jpg" alt="">
+                        <hr>
+                        <h2>$6.99/each</h2>
+                        <form>
+                            <div class="inline">
+                                <label for="qty"> Quantity:&nbsp;</label>
+                                <input type="number" id="qty" name="weight" value="1" min="0" step="1">
+                                <input class="btn btn-primary" type="button" value="Add to Cart">
+                            </div>
+                        </form>
+                        <table class="desc-table">
+                            <tr>
+                                <td>Origin</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Producer</td>
+                                <td>Robin Hood's Dairy Market</td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+                        <h2 style="color: black;">Description</h2>
+                        <p>
+                            Our world famous milk has an undisputed superior taste and quality. Produced from our trusted cow Bessy,
+                            the owner's pride and joy, we package our milk in premium bottles made of <span id="dots">...</span><span id="more"> this is the rest of the text in see more</span>
+
+                        </p>
+                        <button type="button" id="read" onclick="read()">Read More</button>
+                        <script type="text/javascript">
+                        var i=0;
+                        function read(){
+                          if(!i){
+                            document.getElementByID("more").style.display ="inline";
+                            document.getElementByID("dots").style.display ="none";
+                            document.getElementByID("read").innerHTML ="read less";
+                            i=1;
+
+                          }
+                          else{
+                            document.getElementByID("more").style.display ="none";
+                            document.getElementByID("dots").style.display ="inline";
+                            document.getElementByID("read").innerHTML ="read more";
+                            i=0;
+                          }
+                        }
+                        </script>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <footer>
+                    <section>
+                        <table class="styled">
+                            <tr>
+                                <th colspan="2;"> <b>HOURS </b></th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <td>Mon-Fri</td>
+                                <td>08:00-21:00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Sat/Sun</td>
+                                <td>09:00-20:00</td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2;"> <b>CONTACT </b></th>
+                            </tr>
+
+                            <tr>
+                                <td>Phone</td>
+                                <td>(514) 555-1234</td>
+                            </tr>
+
+                            <tr>
+                                <td>Email</td>
+                                <td><a href="mailto:management@robin-hood-market.com">management@robin-hood-market.com</a></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section>
+                        <form>
+                            <b>Contact Us</b>
+                            <input type="text" id="name" placeholder="Full Name" required/>
+                            <input type="email" id="email" placeholder="Email" required/>
+                            <textarea name="msg" placeholder="Tell us what you think" required></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </section>
+                </footer>
+            </section>
+        </div>
+        <script type="text/javascript" src="../js/index.js"></script>
+    </body>
+</html>

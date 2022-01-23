@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Edit Products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+    </head>
+
+    <body id="home" class="open-left">
+        <div id="offcanvas-left" class="hide">
+            <ul>
+                <li><a href="P1.html" > Homepage </a></li>
+                <li><a href="P2.html" > Categories </a></li>
+                <li><a href="P4.html" > Shopping Cart </a></li>
+                <li><a href="P5.html" > User login </a></li>
+                <li><a href="P6.html" > Sign up </a></li>
+                <li><a href="P7.html"> Product List </a></li>
+                <li><a href="P8.html"> Edit Product </a></li>
+                <li><a href="P9.html"> User list </a></li>
+                <li><a href="P10.html"> Edit User </a></li>
+                <li><a href="P11.html"> Order List </a></li>
+                <li><a href="P12.html"> Edit Order </a></li>
+            </ul>
+        </div>
+
+        <div class="togglebar">
+            <!-- adds the class of hide to .offcanvas.left -->
+            <div class="toggle" onclick="toggleLeft()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="center">
+            <header>
+                <h1 style="color: #fff;">
+                    Robin Hood's Dairy Market Backstore
+                </h1>
+            </header>
+
+            <main>
+                <!-- The User list in table format -->
+                <table>
+
+                    <!-- Table header -->
+                    <tr>
+                        <th> User </th>
+                        <th> e-mail </th>
+                        <th> Member Since </th>
+                    </tr>
+
+                    <!-- first user, static, hardcoded -->
+                    <tr>
+                        <td> Robin of Sherwood </td>
+                        <td> kingRichardFan69@gmail.com </td>
+                        <td> 14th Century A.D. </td>
+                        <th><input class="btn-primary" type="button" value="Delete User"/></th>
+                        <th><input class="btn-primary" type="button" value="Edit User"/></th>
+                    </tr>
+
+                    <!-- Second user -->
+                    <tr>
+                        <td> Drew "The Owner" Chaucer </td>
+                        <td> geoffsDad@aol.com </td>
+                        <td> 2002/10/30 </td>
+                        <th><input class="btn-primary" type="button" value="Delete User"/></th>
+                        <th><input class="btn-primary" type="button" value="Edit User"/></th>
+                    </tr>
+
+                    <!-- Third user -->
+                    <tr>
+                        <td> Gandalf the Grey </td>
+                        <td> took.crusherXD@hotmail.ca </td>
+                        <td> Pre Arda </td>
+                        <th><input class="btn-primary" type="button" value="Delete User"/></th>
+                        <th><input class="btn-primary" type="button" value="Edit User"/></th>
+                    </tr>
+
+                    <!-- Fourth user -->
+                    <tr>
+                        <td> Geoff </td>
+                        <td> xxXpro_milkerXxx@netzero.com </td>
+                        <td> 2007/12/25 </td>
+                        <th><input class="btn-primary" type="button" value="Delete User"/></th>
+                        <th><input class="btn-primary" type="button" value="Edit User"/></th>
+                    </tr>
+
+                </table>
+                <form>
+                    <input class="btn-primary" type="button" value="Add User" onclick="location.href='P10.html'"/>
+                </form>
+            </main>
+
+
+            <footer>
+                <h5> Robin Hood's Dairy Market &reg;</h5>
+            </footer>
+        </div>
+        <script type="text/javascript" src="../js/index.js"></script>
+
+    </body>
+
+</html>
